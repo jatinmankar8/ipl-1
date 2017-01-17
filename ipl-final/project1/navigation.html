@@ -1,0 +1,46 @@
+<html>
+<head>
+<script>
+nam=new Array();
+var i=0;
+function f()
+{
+   i=0;
+   document.getElementById('i').src=nam[0]; 
+
+}
+function p()
+{
+    i--;
+    if(i>-1)
+    document.getElementById('i').src=nam[i]; 
+}
+function n()
+{
+    i++;
+  var c=i;
+  var na='a'+c+'.jpg';
+ document.getElementById('i').src=na;
+ document.getElementById('i').width='400';
+ document.getElementById('i').height='400';
+
+}
+function e()
+{
+    i=4;
+   document.getElementById('i').src=nam[4]; 
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<input type="button" value="first" onClick="f()">
+<input type="button" value="Previous" onClick="p()">
+<input type="button" value="Next" onClick="n()">
+<input type="button" value="End" onClick="e()">
+</form>
+<img src="a1.jpg" name="i" id="i">
+</center>
+</body>
+</html>
